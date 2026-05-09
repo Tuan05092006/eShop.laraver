@@ -28,11 +28,11 @@ import seaborn as sns
 # CẤU HÌNH KẾT NỐI CƠ SỞ DỮ LIỆU
 # ═══════════════════════════════════════════════════════════
 DB_CONFIG = {
-    'host': '127.0.0.1',
-    'port': 3306,
+    'host': 'viaduct.proxy.rlwy.net',   # Railway Public Host
+    'port': 3905,                         # Railway Public Port
     'user': 'root',
-    'password': '',       # <-- Nhập mật khẩu MySQL của bạn
-    'database': 'eshop',  # <-- Nhập tên database
+    'password': 'JbnVTwFDstDClUOgCiAlVKTdmLitDVSjc',
+    'database': 'railway',
 }
 
 # Thư mục xuất kết quả

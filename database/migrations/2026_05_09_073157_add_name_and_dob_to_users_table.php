@@ -11,12 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            if (!Schema::hasColumn('users', 'name')) {
+        if (!Schema::hasColumn('users', 'name')) {
+            Schema::table('users', function (Blueprint $table) {
                 $table->string('name')->nullable()->after('id');
-            }
-            $table->date('date_of_birth')->nullable()->after('email');
-        });
+            });
+        }
+
+        if (!Schema::hasColumn('users', 'date_of_birth')) {
+            Schema::table('users', function (Blueprint $table) {
+                $table->date('date_of_birth')->nullable()->after('email');
+            });
+        }
     }
 
     public function down(): void
