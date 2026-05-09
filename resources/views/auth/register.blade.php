@@ -120,6 +120,11 @@
             </div>
 
             <div>
+                <label class="block text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Ngày sinh</label>
+                <input name="date_of_birth" value="{{ old('date_of_birth') }}" class="w-full bg-surface-high sm:bg-background border-0 rounded py-3 px-4 text-on-surface placeholder:text-outline focus:ring-1 focus:ring-primary transition-all text-sm" type="date" required/>
+            </div>
+
+            <div>
                 <label class="block text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Mật khẩu</label>
                 <input name="password" class="w-full bg-surface-high sm:bg-background border-0 rounded py-3 px-4 text-on-surface placeholder:text-outline focus:ring-1 focus:ring-primary transition-all text-sm" placeholder="••••••••" type="password" required autocomplete="new-password"/>
             </div>

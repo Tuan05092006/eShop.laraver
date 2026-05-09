@@ -19,9 +19,11 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
+        'name',
         'email',
         'password',
         'role',
+        'date_of_birth',
     ];
 
     /**
@@ -44,6 +46,18 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'date_of_birth' => 'date',
         ];
+    }
+
+    /**
+     * Get the user's age from date_of_birth.
+     */
+    public function getAgeAttribute(): ?int
+    {
+        if (!$this->date_of_birth) {
+            return null;
+        }
+        return $this->date_of_birth->age;
     }
 }

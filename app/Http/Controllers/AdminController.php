@@ -23,7 +23,77 @@ class AdminController extends Controller
             'recent_orders'   => Order::with(['user', 'orderDetails'])->latest()->take(10)->get(),
             'total_brands'    => Category::count(),
         ];
-        return view('admin.index', $stats);
+
+        // ── Age Analytics ──────────────────────────────
+        $usersWithAge = User::whereNotNull('date_of_birth')->get()->map(function ($user) {
+            return [
+                'id'    => $user->id,
+                'name'  => $user->name ?? $user->email,
+                'email' => $user->email,
+                'date_of_birth' => $user->date_of_birth->format('d/m/Y'),
+                'age'   => $user->age,
+            ];
+        });
+
+        $ageGroups = [
+            '18-25' => 0,
+            '26-35' => 0,
+            '36-45' => 0,
+            '46-55' => 0,
+            '55+'   => 0,
+        ];
+
+        foreach ($usersWithAge as $u) {
+            $age = $u['age'];
+            if ($age >= 18 && $age <= 25) $ageGroups['18-25']++;
+            elseif ($age >= 26 && $age <= 35) $ageGroups['26-35']++;
+            elseif ($age >= 36 && $age <= 45) $ageGroups['36-45']++;
+            elseif ($age >= 46 && $age <= 55) $ageGroups['46-55']++;
+            elseif ($age > 55) $ageGroups['55+']++;
+        }
+
+        $avgAge = $usersWithAge->count() > 0 ? round($usersWithAge->avg('age'), 1) : 0;
+
+        // ── Product Sales Analytics ──────────────────────
+        $productSales = DB::table('order_details')
+            ->join('products', 'order_details.product_id', '=', 'products.id')
+            ->join('categories', 'products.category_id', '=', 'categories.id')
+            ->select(
+                'products.id',
+                'products.name as product_name',
+                'products.image',
+                'categories.name as brand_name',
+                DB::raw('SUM(order_details.quantity) as total_quantity'),
+                DB::raw('SUM(order_details.price * order_details.quantity) as total_revenue')
+            )
+            ->groupBy('products.id', 'products.name', 'products.image', 'categories.name')
+            ->orderByDesc('total_quantity')
+            ->get();
+
+        $topProducts = $productSales->take(10);
+        $bottomProducts = $productSales->count() > 0 ? $productSales->sortBy('total_quantity')->take(5) : collect();
+
+        // Revenue by Brand
+        $brandRevenue = DB::table('order_details')
+            ->join('products', 'order_details.product_id', '=', 'products.id')
+            ->join('categories', 'products.category_id', '=', 'categories.id')
+            ->select(
+                'categories.name as brand_name',
+                DB::raw('SUM(order_details.price * order_details.quantity) as total_revenue'),
+                DB::raw('SUM(order_details.quantity) as total_quantity')
+            )
+            ->groupBy('categories.name')
+            ->orderByDesc('total_revenue')
+            ->get();
+
+        return view('admin.index', array_merge($stats, [
+            'usersWithAge'   => $usersWithAge,
+            'ageGroups'      => $ageGroups,
+            'avgAge'         => $avgAge,
+            'topProducts'    => $topProducts,
+            'bottomProducts' => $bottomProducts,
+            'brandRevenue'   => $brandRevenue,
+        ]));
     }
 
     // ── Products ────────────────────────────────────

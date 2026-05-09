@@ -27,6 +27,7 @@
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .sidebar-link.active { background: rgba(41,98,255,0.15); color: #b6c4ff; border-left: 3px solid #2962ff; }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body class="bg-surface text-white font-body min-h-screen flex">
 
