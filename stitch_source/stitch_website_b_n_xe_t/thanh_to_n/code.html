@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353534",
+                    "on-tertiary-fixed-variant": "#802a00",
+                    "inverse-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-secondary": "#142b6f",
+                    "on-secondary-fixed-variant": "#2e4287",
+                    "on-primary-fixed-variant": "#003ab3",
+                    "on-tertiary-container": "#fff4f1",
+                    "surface-container-high": "#2a2a2a",
+                    "outline": "#8d90a2",
+                    "primary-fixed": "#dce1ff",
+                    "error": "#ffb4ab",
+                    "primary": "#b6c4ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-low": "#1c1b1b",
+                    "secondary": "#b6c4ff",
+                    "on-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "inverse-on-surface": "#313030",
+                    "on-error-container": "#ffdad6",
+                    "background": "#131313",
+                    "tertiary": "#ffb59a",
+                    "on-secondary-fixed": "#001550",
+                    "on-primary-container": "#f7f5ff",
+                    "secondary-fixed": "#dce1ff",
+                    "surface-dim": "#131313",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-container": "#9eb2fe",
+                    "secondary-fixed-dim": "#b6c4ff",
+                    "on-surface-variant": "#c3c5d8",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "inverse-primary": "#004ee8",
+                    "surface-tint": "#b6c4ff",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary-container": "#2e4287",
+                    "on-primary-fixed": "#001550",
+                    "outline-variant": "#434656",
+                    "tertiary-container": "#c74500",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary-container": "#2962ff",
+                    "surface-container-highest": "#353534",
+                    "on-primary": "#002780",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-tertiary": "#5b1b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #131313;
+        color: #e5e2e1;
+      }
+      h1, h2, h3, .technical-font {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#1c1b1b]/60 backdrop-blur-xl flex justify-between items-center px-8 h-20 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2962ff] cursor-pointer scale-95 active:scale-90 transition-transform">menu</span>
+<span class="text-2xl font-black tracking-widest text-[#e5e2e1] uppercase font-['Space_Grotesk']">KINETIC</span>
+</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors duration-300 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm" href="#">Showroom</a>
+<a class="text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors duration-300 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm" href="#">Performance</a>
+<a class="text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors duration-300 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm" href="#">Concierge</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2962ff] cursor-pointer scale-95 active:scale-90 transition-transform">shopping_cart</span>
+</div>
+</header>
+<main class="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+<div class="mb-12">
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter uppercase text-on-surface mb-2">THANH TOÁN</h1>
+<p class="text-on-surface-variant tracking-wider uppercase text-sm font-medium">Hoàn tất quy trình sở hữu tuyệt tác kỹ thuật.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Checkout Form -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Customer Info Section -->
+<section class="bg-surface-container-low p-8 rounded-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">person</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight uppercase mb-8 flex items-center gap-3">
+<span class="text-primary-container">01</span> THÔNG TIN KHÁCH HÀNG
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-1">
+<label class="text-xs font-bold tracking-widest text-on-surface-variant uppercase">Họ và Tên</label>
+<input class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary px-0 py-3 text-on-surface outline-none transition-all placeholder:text-outline/50 uppercase font-medium" placeholder="NGUYEN VAN A" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold tracking-widest text-on-surface-variant uppercase">Số điện thoại</label>
+<input class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary px-0 py-3 text-on-surface outline-none transition-all placeholder:text-outline/50 font-medium" placeholder="+84 000 000 000" type="tel"/>
+</div>
+<div class="md:col-span-2 space-y-1">
+<label class="text-xs font-bold tracking-widest text-on-surface-variant uppercase">Email</label>
+<input class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary px-0 py-3 text-on-surface outline-none transition-all placeholder:text-outline/50 uppercase font-medium" placeholder="CONTACT@KINETIC.VN" type="email"/>
+</div>
+<div class="md:col-span-2 space-y-1">
+<label class="text-xs font-bold tracking-widest text-on-surface-variant uppercase">Địa chỉ giao xe / Showroom nhận xe</label>
+<input class="w-full bg-surface-container-highest border-b-2 border-outline-variant/30 focus:border-primary px-0 py-3 text-on-surface outline-none transition-all placeholder:text-outline/50 uppercase font-medium" placeholder="72 LÊ THÁNH TÔN, QUẬN 1, TP.HCM" type="text"/>
+</div>
+</div>
+</section>
+<!-- Payment Method Section -->
+<section class="bg-surface-container-low p-8 rounded-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">payments</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight uppercase mb-8 flex items-center gap-3">
+<span class="text-primary-container">02</span> PHƯƠNG THỨC THANH TOÁN
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Option 1: Bank Transfer -->
+<label class="cursor-pointer group">
+<input checked="" class="hidden peer" name="payment" type="radio"/>
+<div class="p-6 border-2 border-outline-variant/20 peer-checked:border-primary peer-checked:bg-surface-container-high bg-surface-container transition-all flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary">account_balance</span>
+<div>
+<p class="text-sm font-bold tracking-widest uppercase mb-1">Chuyển khoản</p>
+<p class="text-[10px] text-on-surface-variant leading-relaxed">Xác nhận nhanh chóng qua cổng liên ngân hàng.</p>
+</div>
+</div>
+</label>
+<!-- Option 2: Installment -->
+<label class="cursor-pointer group">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="p-6 border-2 border-outline-variant/20 peer-checked:border-primary peer-checked:bg-surface-container-high bg-surface-container transition-all flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary">credit_card</span>
+<div>
+<p class="text-sm font-bold tracking-widest uppercase mb-1">Trả góp</p>
+<p class="text-[10px] text-on-surface-variant leading-relaxed">Lãi suất 0% qua các đối tác tài chính chiến lược.</p>
+</div>
+</div>
+</label>
+<!-- Option 3: Cash -->
+<label class="cursor-pointer group">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="p-6 border-2 border-outline-variant/20 peer-checked:border-primary peer-checked:bg-surface-container-high bg-surface-container transition-all flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary">payments</span>
+<div>
+<p class="text-sm font-bold tracking-widest uppercase mb-1">Tiền mặt</p>
+<p class="text-[10px] text-on-surface-variant leading-relaxed">Thanh toán trực tiếp tại hệ thống Gallery.</p>
+</div>
+</div>
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary -->
+<aside class="lg:col-span-4">
+<div class="sticky top-32 space-y-6">
+<div class="bg-surface-container-high p-8 rounded-lg shadow-2xl">
+<h3 class="text-xl font-bold tracking-tight uppercase mb-6 border-b border-outline-variant/20 pb-4">ĐƠN HÀNG CỦA BẠN</h3>
+<!-- Order Item -->
+<div class="flex gap-4 mb-8">
+<div class="w-24 h-24 bg-surface-container-highest rounded overflow-hidden flex-shrink-0">
+<img alt="Supercar" class="w-full h-full object-cover" data-alt="Close-up side profile of a sleek metallic black supercar with carbon fiber details in a high-contrast studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQpw1SNinATJTs9gIkkDSfA4PGCmYHaSOiOv4-AZJjZbezTO6BtNQLwi7c9GK445QvObCCM9yG_g-IOfVQwVwKyASOfWfmJfEEOpOGwY32cUrm04YMc8Gj2Av2cxBWv0VQV8Ri-WTuWvX1Wuu0Lwahkq1g8JCbSaRssaxUVrjfAkKudUWyO27YwBsOgKDjlBCebFbPX5XEcpeM88JkXtqL2KN7RJbauQU8S_M7XNDNr0RaWKCD6FDF_MiN16sU2TI3eKtMR-7SpQ16"/>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<h4 class="font-bold tracking-tight uppercase text-sm">KINETIC VECTOR GT</h4>
+<p class="text-[10px] text-on-surface-variant tracking-wider uppercase mt-1">Nero Nemesis / Matte Carbon</p>
+</div>
+<p class="text-primary font-bold text-lg">7.250.000.000 ₫</p>
+</div>
+</div>
+<!-- Price Breakdown -->
+<div class="space-y-3 mb-8">
+<div class="flex justify-between items-center text-xs tracking-wider uppercase">
+<span class="text-on-surface-variant">Giá niêm yết</span>
+<span class="font-medium">7.200.000.000 ₫</span>
+</div>
+<div class="flex justify-between items-center text-xs tracking-wider uppercase">
+<span class="text-on-surface-variant">Phí đăng ký &amp; Biển số</span>
+<span class="font-medium">45.000.000 ₫</span>
+</div>
+<div class="flex justify-between items-center text-xs tracking-wider uppercase">
+<span class="text-on-surface-variant">Bảo hiểm vật chất (1 năm)</span>
+<span class="font-medium">5.000.000 ₫</span>
+</div>
+</div>
+<!-- Total -->
+<div class="border-t border-outline-variant/30 pt-6 mb-8">
+<div class="flex justify-between items-end">
+<span class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Tổng cộng</span>
+<span class="text-3xl font-black text-on-surface tracking-tighter">7.250.000.000 ₫</span>
+</div>
+</div>
+<!-- CTA -->
+<button class="w-full bg-gradient-to-br from-primary-container to-primary text-on-primary py-5 rounded-lg font-bold tracking-widest uppercase text-sm shadow-[0_10px_40px_rgba(41,98,255,0.3)] hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                            XÁC NHẬN &amp; THANH TOÁN
+                        </button>
+<p class="text-[9px] text-center text-outline mt-6 uppercase tracking-widest leading-relaxed">
+                            Bằng cách nhấn xác nhận, bạn đồng ý với các <a class="underline" href="#">Điều khoản &amp; Chính sách</a> của Kinetic Gallery.
+                        </p>
+</div>
+<!-- Trust Badge Card -->
+<div class="bg-surface-container p-6 rounded-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<div>
+<p class="text-[10px] font-bold tracking-widest uppercase">GIAO DỊCH BẢO MẬT</p>
+<p class="text-[9px] text-on-surface-variant uppercase leading-relaxed">Mã hóa SSL 256-bit theo tiêu chuẩn quân đội.</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-12 px-8 border-t border-[#434656]/20">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 w-full max-w-7xl mx-auto">
+<div>
+<p class="text-[#e5e2e1] font-bold text-xl tracking-tighter mb-2 uppercase font-['Space_Grotesk']">KINETIC GALLERY</p>
+<p class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656]">© 2024 KINETIC GALLERY. PRECISION ENGINEERED.</p>
+</div>
+<div class="flex flex-wrap gap-6 md:justify-end">
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Privacy</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Terms</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Inventory</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

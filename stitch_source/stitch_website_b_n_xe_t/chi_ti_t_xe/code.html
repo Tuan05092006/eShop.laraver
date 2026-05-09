@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC GALLERY | Chi tiết sản phẩm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353534",
+                    "on-tertiary-fixed-variant": "#802a00",
+                    "inverse-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-secondary": "#142b6f",
+                    "on-secondary-fixed-variant": "#2e4287",
+                    "on-primary-fixed-variant": "#003ab3",
+                    "on-tertiary-container": "#fff4f1",
+                    "surface-container-high": "#2a2a2a",
+                    "outline": "#8d90a2",
+                    "primary-fixed": "#dce1ff",
+                    "error": "#ffb4ab",
+                    "primary": "#b6c4ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-low": "#1c1b1b",
+                    "secondary": "#b6c4ff",
+                    "on-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "inverse-on-surface": "#313030",
+                    "on-error-container": "#ffdad6",
+                    "background": "#131313",
+                    "tertiary": "#ffb59a",
+                    "on-secondary-fixed": "#001550",
+                    "on-primary-container": "#f7f5ff",
+                    "secondary-fixed": "#dce1ff",
+                    "surface-dim": "#131313",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-container": "#9eb2fe",
+                    "secondary-fixed-dim": "#b6c4ff",
+                    "on-surface-variant": "#c3c5d8",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "inverse-primary": "#004ee8",
+                    "surface-tint": "#b6c4ff",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary-container": "#2e4287",
+                    "on-primary-fixed": "#001550",
+                    "outline-variant": "#434656",
+                    "tertiary-container": "#c74500",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary-container": "#2962ff",
+                    "surface-container-highest": "#353534",
+                    "on-primary": "#002780",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-tertiary": "#5b1b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(28, 27, 27, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0_4px_30px_rgba(0,0,0,0.1)] bg-gradient-to-b from-[#2a2a2a] to-transparent">
+<div class="flex justify-between items-center px-8 h-20 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e5e2e1] cursor-pointer hover:text-[#b6c4ff] transition-colors duration-300 scale-95 active:scale-90" data-icon="menu">menu</span>
+<span class="text-2xl font-black tracking-widest text-[#e5e2e1] font-headline uppercase">KINETIC</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#e5e2e1] font-headline font-bold tracking-tighter uppercase hover:text-[#b6c4ff] transition-colors duration-300" href="#">Showroom</a>
+<a class="text-[#2962ff] border-b-2 border-[#2962ff] font-headline font-bold tracking-tighter uppercase transition-colors duration-300" href="#">Performance</a>
+<a class="text-[#e5e2e1] font-headline font-bold tracking-tighter uppercase hover:text-[#b6c4ff] transition-colors duration-300" href="#">Concierge</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#e5e2e1] cursor-pointer hover:text-[#b6c4ff] transition-colors duration-300" data-icon="shopping_cart">shopping_cart</span>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20 max-w-7xl mx-auto px-6 lg:px-8">
+<!-- Hero Gallery Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+<!-- Main Display -->
+<div class="lg:col-span-8 relative group overflow-hidden rounded-lg bg-surface-container">
+<img alt="Main Car View" class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek modern electric supercar in a minimalist dark studio with soft cyan rim lighting and metallic reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4CDhiydutNUqndKhRBW0gR5b7fgZj3-VIFLZCIpLj3qkwP2pOEWHmZMQI2NklrAAWVisLzmgwc6IozM__9WbDPRJUu4izyGjIE84fLnQufugBGE7aOO-MIKcbCge1ZKntZgGiFiaBvifg5EVtjUNeXeChGK-PGgL2Tmmn4xSyQmPy6RONelceXrzrd283y1VJnTw0jyspMelMRswMBluf9zoLiFP7sU-Dq3X8Sy91OJg9Ol8oU71yOCpurtaGkF0uqxaoiYQ19UPe"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+<span class="bg-tertiary text-on-tertiary px-3 py-1 text-[10px] tracking-widest font-bold uppercase rounded-sm mb-4 inline-block">Mẫu Xe Mới</span>
+<h1 class="text-5xl font-black font-headline tracking-tighter uppercase text-white mb-2">KINETIC E-VISION GT</h1>
+<p class="text-on-surface-variant font-medium tracking-wide">Hiệu suất thuần điện. Kỹ thuật tương lai.</p>
+</div>
+</div>
+<!-- Side Gallery Bento -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<div class="h-1/2 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Interior View" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Interior cockpit of a luxury car featuring high-resolution digital displays, carbon fiber accents, and ambient blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyApeaMVO3HUJw7qU00_QB6sHgBP0aFNLxlHjqINyL2bgLYPJKR8da8hxZ_9CfR0OAKcV9o5Qswkgw3FZjxR9-J8yl27LIPThl3n3xxGlTabkVbLHWrxijqtyOHWjj5GvHMTNMSORljE_qQkx2xPfLjmrW918CHN0y0LBdkV6sq9UFs5sC_tqVqi0JGmgioBDUtrGR3qe9IVdVu5H0wlhX8kILtLKGGSS8U2oWV5dbZapHj-DM9GXT-2iFAJBb7viuFLpaD5j1wHAa"/>
+</div>
+<div class="h-1/2 grid grid-cols-2 gap-4">
+<div class="rounded-lg bg-surface-container overflow-hidden">
+<img alt="Wheel Detail" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Close-up of a high-performance alloy wheel with ceramic brake calipers and low-profile tires in a studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrkHHbmJ0WBvHl6umKrdYbssl6tQu0fYn3mSBHQeuxgxZN7qO1z8XxH7KdcvKeBxHhpT41MJ3ughKgouwjqZOUnUD3r_WwHesBizIF_vlfVCrLmtbs2kDAyKGUEeTZ4LQ91RaAJx5O9RE5S7f1-Dcs1vkvcrb59KQfL-OulVsZGz7fitLXHUH7jhyL6nlIG8-KlK2v0iktkzIDfkThgiCZNllTfH-NY8rKft7yASgLO3UpwB5Uf7vDu9dUIM-JWzGTpXbW28Ra5UCn"/>
+</div>
+<div class="rounded-lg bg-surface-container overflow-hidden relative flex items-center justify-center group cursor-pointer">
+<img alt="Rear Detail" class="w-full h-full object-cover brightness-50" data-alt="Rear tail light signature of a futuristic car at night with a sharp red LED bar across the back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzMNooHKM1ZL_puRY1AYE1gz0gCHxx1J4VF03L-pvzChXRliVF30vnjp62GlLragYoUSLrnGgYXY59HdoE-XuSVm03lEuB-DI1NL96KGRjL-LHfvyHJaNKEQUZVQPc3ka5SKHwXgGx-pPNInbgVhnqk8Imyi3w3IdiXBbFtl-BFmAB9qczr8znkQnufofAzwFHrLddZk0VI_GUlxvo-1XypzW2CSQL6ApyxkmeTYpWuOE0sPsueOKkdiuWY0XzkpMnwwgAHSCL5tTy"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center gap-2">
+<span class="material-symbols-outlined text-3xl" data-icon="grid_view">grid_view</span>
+<span class="text-xs font-headline font-bold tracking-widest uppercase">Xem tất cả</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content & Specs -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Details Column -->
+<div class="lg:col-span-2 space-y-16">
+<!-- Info Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end pb-8 border-b border-outline-variant/20">
+<div>
+<h2 class="text-sm font-headline tracking-[0.2em] text-primary uppercase mb-4">Tổng quan sản phẩm</h2>
+<p class="text-lg text-on-surface-variant max-w-xl">
+                            E-Vision GT không chỉ là một phương tiện di chuyển, mà là một bước nhảy vọt về công nghệ. Với thiết kế khí động học tối ưu và hệ thống truyền động điện tân tiến, nó tái định nghĩa cảm giác lái trong kỷ nguyên mới.
+                        </p>
+</div>
+<div class="mt-6 md:mt-0 text-right">
+<span class="text-label-md text-on-surface-variant tracking-widest uppercase block mb-1">Giá Niêm Yết</span>
+<span class="text-4xl font-headline font-black text-on-surface">5.290.000.000 VNĐ</span>
+</div>
+</div>
+<!-- Technical Specs Bento -->
+<div>
+<h3 class="text-2xl font-headline font-bold uppercase tracking-tight mb-8 flex items-center gap-3">
+<span class="w-8 h-[2px] bg-primary"></span> Thông số kỹ thuật
+                    </h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg transition-colors hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="bolt">bolt</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Động Cơ</p>
+<p class="font-headline font-bold text-lg">Dual Electric</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg transition-colors hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="speed">speed</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Công Suất</p>
+<p class="font-headline font-bold text-lg">750 HP</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg transition-colors hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="tire_repair">tire_repair</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Mô-men Xoắn</p>
+<p class="font-headline font-bold text-lg">1,050 Nm</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg transition-colors hover:bg-surface-container-high group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="timer">timer</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">0-100 km/h</p>
+<p class="font-headline font-bold text-lg">2.4 Giây</p>
+</div>
+</div>
+</div>
+<!-- Features Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-xl font-headline font-bold uppercase tracking-tight mb-6 flex items-center gap-3">
+                            An Toàn
+                        </h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Hệ thống tự lái cấp độ 3 Kinetic Drive</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Phanh gốm carbon hiệu suất cao</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Hệ thống túi khí bao quanh 360 độ</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Cảnh báo va chạm sớm bằng AI</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-headline font-bold uppercase tracking-tight mb-6 flex items-center gap-3">
+                            Tiện Nghi
+                        </h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Màn hình OLED cong HyperDisplay 55"</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Hệ thống âm thanh vòm 24 loa Bespoke</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Ghế massage chỉnh điện 22 hướng</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant group">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="group-hover:text-on-surface transition-colors">Cửa sổ trời toàn cảnh đổi màu thông minh</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Sticky CTA Sidebar -->
+<div class="lg:col-span-1">
+<div class="sticky top-28 space-y-6">
+<div class="bg-surface-container-low p-8 rounded-lg border border-outline-variant/10">
+<div class="mb-8">
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">Tình trạng</p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-sm font-bold uppercase">Sẵn hàng tại Gallery</span>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full py-4 px-6 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold uppercase tracking-wider rounded-lg transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary-container/20">
+                                Thêm vào giỏ hàng
+                            </button>
+<button class="w-full py-4 px-6 border border-primary text-primary font-headline font-bold uppercase tracking-wider rounded-lg transition-all hover:bg-primary/10 active:scale-95">
+                                Liên hệ tư vấn
+                            </button>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/20 space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="verified_user">verified_user</span>
+<div>
+<p class="text-sm font-bold">Bảo hành 5 năm</p>
+<p class="text-xs text-on-surface-variant">Hoặc 100.000km đầu tiên</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="support_agent">support_agent</span>
+<div>
+<p class="text-sm font-bold">Hỗ trợ 24/7</p>
+<p class="text-xs text-on-surface-variant">Đường dây nóng độc quyền</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Configurator Teaser -->
+<div class="bg-surface-container-highest p-6 rounded-lg group cursor-pointer overflow-hidden relative">
+<div class="relative z-10">
+<h4 class="font-headline font-bold uppercase tracking-tight mb-2">Cá nhân hóa xe của bạn</h4>
+<p class="text-xs text-on-surface-variant mb-4">Chọn màu sơn, nội thất và mâm xe theo sở thích.</p>
+<span class="text-xs font-bold text-primary flex items-center gap-1 group-hover:gap-2 transition-all">BẮT ĐẦU CẤU HÌNH <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span></span>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-12 px-8 border-t border-[#434656]/20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 w-full">
+<div>
+<p class="text-[#e5e2e1] font-bold font-headline mb-2 uppercase">KINETIC GALLERY</p>
+<p class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656]">© 2024 KINETIC GALLERY. PRECISION ENGINEERED.</p>
+</div>
+<div class="flex gap-8 md:justify-end">
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Privacy</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Terms</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Inventory</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

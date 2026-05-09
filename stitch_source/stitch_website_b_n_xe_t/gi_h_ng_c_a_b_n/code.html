@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353534",
+                    "on-tertiary-fixed-variant": "#802a00",
+                    "inverse-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-secondary": "#142b6f",
+                    "on-secondary-fixed-variant": "#2e4287",
+                    "on-primary-fixed-variant": "#003ab3",
+                    "on-tertiary-container": "#fff4f1",
+                    "surface-container-high": "#2a2a2a",
+                    "outline": "#8d90a2",
+                    "primary-fixed": "#dce1ff",
+                    "error": "#ffb4ab",
+                    "primary": "#b6c4ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-low": "#1c1b1b",
+                    "secondary": "#b6c4ff",
+                    "on-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "inverse-on-surface": "#313030",
+                    "on-error-container": "#ffdad6",
+                    "background": "#131313",
+                    "tertiary": "#ffb59a",
+                    "on-secondary-fixed": "#001550",
+                    "on-primary-container": "#f7f5ff",
+                    "secondary-fixed": "#dce1ff",
+                    "surface-dim": "#131313",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-container": "#9eb2fe",
+                    "secondary-fixed-dim": "#b6c4ff",
+                    "on-surface-variant": "#c3c5d8",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "inverse-primary": "#004ee8",
+                    "surface-tint": "#b6c4ff",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary-container": "#2e4287",
+                    "on-primary-fixed": "#001550",
+                    "outline-variant": "#434656",
+                    "tertiary-container": "#c74500",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary-container": "#2962ff",
+                    "surface-container-highest": "#353534",
+                    "on-primary": "#002780",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-tertiary": "#5b1b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #131313;
+      }
+      .technical-text {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#1c1b1b]/60 backdrop-blur-xl bg-gradient-to-b from-[#2a2a2a] to-transparent shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+<div class="flex justify-between items-center px-8 h-20 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#e5e2e1] scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-2xl font-black tracking-widest text-[#e5e2e1] font-['Space_Grotesk'] uppercase">KINETIC</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#e5e2e1] font-['Space_Grotesk'] font-bold tracking-tighter uppercase hover:text-[#b6c4ff] transition-colors duration-300" href="#">Showroom</a>
+<a class="text-[#e5e2e1] font-['Space_Grotesk'] font-bold tracking-tighter uppercase hover:text-[#b6c4ff] transition-colors duration-300" href="#">Hiệu năng</a>
+<a class="text-[#2962ff] border-b-2 border-[#2962ff] font-['Space_Grotesk'] font-bold tracking-tighter uppercase" href="#">Giỏ hàng</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors scale-95 active:scale-90 transition-transform relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-primary-container text-[10px] px-1.5 py-0.5 rounded-full font-bold">2</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto min-h-screen">
+<div class="mb-12">
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter uppercase text-on-background mb-4">Giỏ hàng</h1>
+<p class="text-on-surface-variant font-label tracking-wide uppercase text-sm">Tuyển tập những kiệt tác bạn đã chọn</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Cart Items List -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Item 1 -->
+<div class="group bg-surface-container-low p-6 flex flex-col md:flex-row gap-8 relative overflow-hidden transition-all duration-500 hover:bg-surface-container-high">
+<div class="w-full md:w-64 h-44 overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img alt="Kinetic GT" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern dark gray electric supercar parked in a futuristic minimalist concrete showroom with dramatic top lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1rtL8zBEoLtJNOdEd2L_EqvYTmzR8T2BFEjesLwWNyqPRQI7i2tFaMS3rNMMETLscNv5od3YuOWvGTCw75ty18o2D3bb02AiybG_DhPkfLwuz2YopyZ6cGPCZ3WZnt0lEXuzpDYSZI6deRKuGBNLNNveJj4_ifUrDkMqUOOieARxetrroT0smXGif4ACrDJ2keMdAOTdQNbMS7MOaAHjREPOdw9b8hU84qINZfme9zPFmYVJbEbhTDeE6jkoVc58dbp6j7loTgAvG"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="text-3xl font-headline font-bold tracking-tight uppercase text-on-background leading-none mb-2">Kinetic GT Alpha</h2>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] px-3 py-1 rounded-full font-label font-bold tracking-widest uppercase">Hiệu năng cao</span>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="mt-6 flex flex-wrap gap-4 text-xs font-label text-on-surface-variant tracking-wider uppercase">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">speed</span> 0-100 KM/H: 2.1s
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">battery_charging_full</span> Tầm xa: 650KM
+                            </div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div class="flex items-center gap-4 bg-surface-container-highest px-4 py-2">
+<button class="text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="font-headline font-bold text-lg w-4 text-center">1</span>
+<button class="text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<div class="text-right">
+<p class="text-primary font-headline text-3xl font-bold tracking-tighter">4.250.000.000 ₫</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group bg-surface-container-low p-6 flex flex-col md:flex-row gap-8 relative overflow-hidden transition-all duration-500 hover:bg-surface-container-high">
+<div class="w-full md:w-64 h-44 overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img alt="Luxury Sedan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sleek black luxury sedan driving through a modern European city at twilight with blurred city lights in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlnvCEZThI5fFTXVTF8dN4FZpEKZAVA7UvW3wfQp8VChtQOaDaCNkzHPf4TGQaLqh3Nmto9HdmAYrvXVKdfDQDDTdoG63yvC4fLvEcEl3hhlCi9rpu2OFhZELfAyzrOgrEFyME1D6PUCHOZ2nuc7Tss9JK4S_6ipHjkXrklV4iOxiHhWgmFErd6PGk2pnjxqLU9Nu3qUYPAtYyn0Td3IsrF4ogxsgkH5vWgyG05hm14oxQ6sNPG-osSbekZSJnojy1QcMx2R5D9BZm"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="text-3xl font-headline font-bold tracking-tight uppercase text-on-background leading-none mb-2">Kinetic E-Legacy</h2>
+<span class="bg-surface-container-highest text-on-surface-variant text-[10px] px-3 py-1 rounded-full font-label font-bold tracking-widest uppercase">Đã qua sử dụng</span>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="mt-6 flex flex-wrap gap-4 text-xs font-label text-on-surface-variant tracking-wider uppercase">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">history</span> ODO: 12,400 KM
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">event</span> Năm: 2023
+                            </div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div class="flex items-center gap-4 bg-surface-container-highest px-4 py-2">
+<button class="text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="font-headline font-bold text-lg w-4 text-center">1</span>
+<button class="text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<div class="text-right">
+<p class="text-primary font-headline text-3xl font-bold tracking-tighter">2.890.000.000 ₫</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Summary -->
+<aside class="lg:col-span-4 bg-surface-container p-8 sticky top-32 border-l-0 border-outline-variant/20">
+<h3 class="text-xl font-headline font-bold tracking-widest uppercase mb-8 pb-4 border-b border-outline-variant/20">Tóm tắt đơn hàng</h3>
+<div class="space-y-6 mb-12">
+<div class="flex justify-between text-on-surface-variant font-label uppercase text-sm tracking-widest">
+<span>Tạm tính</span>
+<span class="text-on-surface font-headline font-bold">7.140.000.000 ₫</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label uppercase text-sm tracking-widest">
+<span>Thuế VAT (10%)</span>
+<span class="text-on-surface font-headline font-bold">714.000.000 ₫</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label uppercase text-sm tracking-widest">
+<span>Phí vận chuyển</span>
+<span class="text-tertiary font-headline font-bold">Miễn phí</span>
+</div>
+</div>
+<div class="border-t border-outline-variant/50 pt-8 mb-10">
+<div class="flex justify-between items-end">
+<span class="text-on-surface-variant font-label uppercase text-sm tracking-[0.2em]">Tổng cộng</span>
+<div class="text-right">
+<p class="text-primary font-headline text-4xl font-bold tracking-tighter">7.854.000.000 ₫</p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full py-5 bg-gradient-to-r from-primary-container to-primary text-on-primary font-headline font-bold uppercase tracking-[0.15em] rounded-lg text-sm hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary-container/20">
+                        Tiến hành thanh toán
+                    </button>
+<button class="w-full py-5 bg-transparent border border-primary text-primary font-headline font-bold uppercase tracking-[0.15em] rounded-lg text-sm hover:bg-primary/5 transition-all">
+                        Tiếp tục mua sắm
+                    </button>
+</div>
+<div class="mt-8 flex items-center gap-3 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span class="text-[10px] font-label uppercase tracking-widest">Giao dịch an toàn &amp; Bảo mật tuyệt đối</span>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-12 px-8 border-t border-[#434656]/20">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-[#e5e2e1] font-bold text-xl font-headline tracking-widest">KINETIC GALLERY</span>
+<p class="text-[#434656] font-['Manrope'] text-xs tracking-wider uppercase">© 2024 KINETIC GALLERY. PRECISION ENGINEERED.</p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+<a class="text-[#434656] hover:text-[#e5e2e1] font-['Manrope'] text-xs tracking-wider uppercase transition-colors" href="#">Privacy</a>
+<a class="text-[#434656] hover:text-[#e5e2e1] font-['Manrope'] text-xs tracking-wider uppercase transition-colors" href="#">Terms</a>
+<a class="text-[#434656] hover:text-[#e5e2e1] font-['Manrope'] text-xs tracking-wider uppercase transition-colors" href="#">Inventory</a>
+<a class="text-[#434656] hover:text-[#e5e2e1] font-['Manrope'] text-xs tracking-wider uppercase transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

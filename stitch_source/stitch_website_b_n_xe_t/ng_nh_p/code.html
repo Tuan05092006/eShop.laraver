@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353534",
+                    "on-tertiary-fixed-variant": "#802a00",
+                    "inverse-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-secondary": "#142b6f",
+                    "on-secondary-fixed-variant": "#2e4287",
+                    "on-primary-fixed-variant": "#003ab3",
+                    "on-tertiary-container": "#fff4f1",
+                    "surface-container-high": "#2a2a2a",
+                    "outline": "#8d90a2",
+                    "primary-fixed": "#dce1ff",
+                    "error": "#ffb4ab",
+                    "primary": "#b6c4ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-low": "#1c1b1b",
+                    "secondary": "#b6c4ff",
+                    "on-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "surface-container": "#201f1f",
+                    "primary-fixed-dim": "#b6c4ff",
+                    "inverse-on-surface": "#313030",
+                    "on-error-container": "#ffdad6",
+                    "background": "#131313",
+                    "tertiary": "#ffb59a",
+                    "on-secondary-fixed": "#001550",
+                    "on-primary-container": "#f7f5ff",
+                    "secondary-fixed": "#dce1ff",
+                    "surface-dim": "#131313",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-container": "#9eb2fe",
+                    "secondary-fixed-dim": "#b6c4ff",
+                    "on-surface-variant": "#c3c5d8",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "inverse-primary": "#004ee8",
+                    "surface-tint": "#b6c4ff",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary-container": "#2e4287",
+                    "on-primary-fixed": "#001550",
+                    "outline-variant": "#434656",
+                    "tertiary-container": "#c74500",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary-container": "#2962ff",
+                    "surface-container-highest": "#353534",
+                    "on-primary": "#002780",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-tertiary": "#5b1b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #2962ff 0%, #b6c4ff 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 min-h-screen flex items-center justify-center p-4">
+<!-- Auth Container -->
+<div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 overflow-hidden bg-surface-container-low rounded-lg shadow-2xl">
+<!-- Left Side: Cinematic Brand Side -->
+<div class="hidden lg:flex lg:col-span-7 relative flex-col justify-between p-12 min-h-[700px]">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="close up of a high performance luxury car headlight with sharp LED details in a dark studio setting" class="w-full h-full object-cover opacity-60" data-alt="close up of a high performance luxury car headlight with sharp LED details in a dark studio setting with cinematic blue highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAV3eYK_Yz1a_VZzrKaB1g2sMSpwFja2Gt9s06bB7Pmkw3KTYzTZCxx0GxEWjdGvSrCJYXjXshRvSJgWeQplNPL_OFJuxXdaeBR2prmVFNvoj3hDHKR5nRxjODE1-090fUzCneRUyvK51VYVKwHda5US0Q_-1TsTlcFrgugfa3EVUgTDmgpDtUIVuFEUkW5EWsBOiuZwHLT3xgfnqY38GHr5Rd4BGzV7BXrwQJbOP5QwsRGo2MYmDGfb1V5_FiBfD_0R1iO86ZfCqq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-surface-container-lowest/80"></div>
+</div>
+<!-- Brand Header -->
+<div class="relative z-10">
+<h1 class="font-headline font-black text-4xl tracking-widest text-on-surface">KINETIC</h1>
+<p class="font-label text-xs tracking-[0.3em] mt-2 text-primary">PRECISION ENGINEERED</p>
+</div>
+<!-- Brand Content -->
+<div class="relative z-10 max-w-md">
+<h2 class="font-headline font-bold text-5xl leading-tight tracking-tighter mb-6">CHINH PHỤC TỐC ĐỘ, LÀM CHỦ CÔNG NGHỆ.</h2>
+<div class="flex items-center gap-4">
+<div class="h-[2px] w-12 bg-primary"></div>
+<p class="font-label text-sm uppercase tracking-widest opacity-80">Trải nghiệm thượng lưu</p>
+</div>
+</div>
+<!-- Footer Stats -->
+<div class="relative z-10 grid grid-cols-3 gap-8 border-t border-outline-variant/20 pt-8">
+<div>
+<p class="font-headline text-2xl font-bold">2.4S</p>
+<p class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">0-100 KM/H</p>
+</div>
+<div>
+<p class="font-headline text-2xl font-bold">850</p>
+<p class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">MÃ LỰC</p>
+</div>
+<div>
+<p class="font-headline text-2xl font-bold">AUTO</p>
+<p class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">PILOT AI</p>
+</div>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="lg:col-span-5 bg-surface p-8 md:p-16 flex flex-col justify-center">
+<div class="mb-10 lg:hidden">
+<h1 class="font-headline font-black text-2xl tracking-widest text-primary">KINETIC</h1>
+</div>
+<div class="space-y-2 mb-10">
+<h3 class="font-headline text-3xl font-bold tracking-tight">Chào mừng trở lại</h3>
+<p class="text-on-surface-variant text-sm">Vui lòng đăng nhập để tiếp tục vào phòng trưng bày Kinetic.</p>
+</div>
+<form class="space-y-8">
+<!-- Input Group: Email/Phone -->
+<div class="space-y-1 group">
+<label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant group-focus-within:text-primary transition-colors">Email hoặc Số điện thoại</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-outline-variant/30 py-4 px-0 focus:ring-0 focus:border-primary transition-all text-on-surface placeholder:text-outline/40" placeholder="example@kinetic.gallery" type="text"/>
+</div>
+</div>
+<!-- Input Group: Password -->
+<div class="space-y-1 group">
+<div class="flex justify-between items-end">
+<label class="block text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant group-focus-within:text-primary transition-colors">Mật khẩu</label>
+<a class="text-[10px] uppercase tracking-widest text-primary font-bold hover:text-on-primary-container transition-colors" href="#">Quên mật khẩu?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-outline-variant/30 py-4 px-0 focus:ring-0 focus:border-primary transition-all text-on-surface placeholder:text-outline/40" placeholder="••••••••" type="password"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-4">
+<button class="kinetic-gradient w-full py-4 text-sm font-bold uppercase tracking-[0.2em] text-on-primary shadow-lg shadow-primary-container/20 rounded-lg hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
+                        Đăng nhập
+                    </button>
+</div>
+<!-- Divider -->
+<div class="relative py-4 flex items-center">
+<div class="flex-grow border-t border-outline-variant/20"></div>
+<span class="flex-shrink mx-4 text-[10px] uppercase tracking-widest text-on-surface-variant">Hoặc đăng nhập với</span>
+<div class="flex-grow border-t border-outline-variant/20"></div>
+</div>
+<!-- Social Login -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 border border-outline-variant/30 rounded-lg hover:bg-surface-container-high transition-colors" type="button">
+<img alt="Google" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5hgBml2x04bxNlZwR0gJhAaY8PTUxGAco4fctt4mCcQLw87bqFpICaZj8C2ufiCBkWH8GZvQlgkUN9Th4WKTDab_0terVYVSGsGOWvKDtkzunz1adALRecf0LPbiq9rc6IyyoNdEZbx_8WNOQo4Gi9V6jdVAuJT6PodWt4eQloCKGS5LuOIWAMc-Ug_xq3vFpOzu_CbBZKWkVGAWb6fAZnwlLthg9XIK8bwDPtH5c7evpAgEXKRkztnH8UYHzI5Ma7Y8_SqxLsWYp"/>
+<span class="text-xs font-bold uppercase tracking-widest">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 border border-outline-variant/30 rounded-lg hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">ios</span>
+<span class="text-xs font-bold uppercase tracking-widest">Apple</span>
+</button>
+</div>
+</form>
+<!-- Sign Up Prompt -->
+<div class="mt-12 text-center">
+<p class="text-sm text-on-surface-variant">
+                    Chưa có tài khoản? 
+                    <a class="text-primary font-bold hover:underline underline-offset-4 decoration-2" href="#">Tạo tài khoản ngay</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Background Elements -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
+<div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px]"></div>
+<div class="absolute top-[20%] -right-[5%] w-[30%] h-[30%] rounded-full bg-secondary/5 blur-[100px]"></div>
+</div>
+</body></html>

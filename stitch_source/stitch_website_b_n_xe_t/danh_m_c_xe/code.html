@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#353534",
+                      "on-tertiary-fixed-variant": "#802a00",
+                      "inverse-surface": "#e5e2e1",
+                      "error-container": "#93000a",
+                      "on-secondary": "#142b6f",
+                      "on-secondary-fixed-variant": "#2e4287",
+                      "on-primary-fixed-variant": "#003ab3",
+                      "on-tertiary-container": "#fff4f1",
+                      "surface-container-high": "#2a2a2a",
+                      "outline": "#8d90a2",
+                      "primary-fixed": "#dce1ff",
+                      "error": "#ffb4ab",
+                      "primary": "#b6c4ff",
+                      "tertiary-fixed": "#ffdbcf",
+                      "surface-container-low": "#1c1b1b",
+                      "secondary": "#b6c4ff",
+                      "on-surface": "#e5e2e1",
+                      "on-error": "#690005",
+                      "surface-container": "#201f1f",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "inverse-on-surface": "#313030",
+                      "on-error-container": "#ffdad6",
+                      "background": "#131313",
+                      "tertiary": "#ffb59a",
+                      "on-secondary-fixed": "#001550",
+                      "on-primary-container": "#f7f5ff",
+                      "secondary-fixed": "#dce1ff",
+                      "surface-dim": "#131313",
+                      "on-background": "#e5e2e1",
+                      "on-secondary-container": "#9eb2fe",
+                      "secondary-fixed-dim": "#b6c4ff",
+                      "on-surface-variant": "#c3c5d8",
+                      "surface": "#131313",
+                      "surface-bright": "#393939",
+                      "inverse-primary": "#004ee8",
+                      "surface-tint": "#b6c4ff",
+                      "surface-container-lowest": "#0e0e0e",
+                      "secondary-container": "#2e4287",
+                      "on-primary-fixed": "#001550",
+                      "outline-variant": "#434656",
+                      "tertiary-container": "#c74500",
+                      "on-tertiary-fixed": "#380d00",
+                      "primary-container": "#2962ff",
+                      "surface-container-highest": "#353534",
+                      "on-primary": "#002780",
+                      "tertiary-fixed-dim": "#ffb59a",
+                      "on-tertiary": "#5b1b00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #2962ff 0%, #b6c4ff 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#1c1b1b]/60 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+<div class="flex justify-between items-center px-8 h-20 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#2962ff] scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-2xl font-black tracking-widest text-[#e5e2e1] font-headline uppercase">KINETIC</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tighter uppercase text-[#2962ff] border-b-2 border-[#2962ff] transition-colors duration-300" href="#">Showroom</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors duration-300" href="#">Performance</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors duration-300" href="#">Pre-Owned</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#e5e2e1] hover:text-[#b6c4ff] transition-colors duration-300" href="#">Financing</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-[#2962ff] scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6 md:px-12 lg:px-24">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="max-w-2xl">
+<h2 class="text-tertiary font-headline font-bold text-sm tracking-[0.3em] uppercase mb-4">Danh mục 2024</h2>
+<h1 class="text-6xl md:text-8xl font-headline font-black tracking-tighter leading-none mb-6">
+                        BỘ SƯU TẬP <br/> <span class="text-primary">KINETIC</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-lg leading-relaxed">
+                        Khám phá các tuyệt tác kỹ thuật được phân loại theo phong cách sống và nhu cầu vận hành của bạn. Mỗi chiếc xe là một sự khẳng định về đẳng cấp.
+                    </p>
+</div>
+<div class="glass-panel p-6 rounded-lg flex gap-4">
+<div class="text-right">
+<span class="block text-4xl font-headline font-bold leading-none">124</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">Xe có sẵn</span>
+</div>
+<div class="w-px bg-outline-variant/30"></div>
+<div class="text-right">
+<span class="block text-4xl font-headline font-bold leading-none">05</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">Phân khúc</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Catalog -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[1200px]">
+<!-- SUV Segment - Featured Large -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-lg bg-surface-container-low transition-colors duration-500 hover:bg-surface-container-high cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="luxury modern SUV driving through a misty mountain forest road with cool atmospheric lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQpnBdTZeuJmaoJmoABo2jcBAffSCchg47SJvMjGLE28xBPFAAxBONqOd32yZKTOWIE0dbdN7l54i82pjRi-bm5f9pOnHCnzLT3zrQNoQmtP1q_tcFKabzMgHiMs7_ODskWNqgrN7IDxfRhY4xNXasz_vRS1sBPfJFHyEpAxklKkO4bP9e1YwVVpJGHWotnFMVMN1vG9QDmmkGlc4X0dK9QKg6SReL8rFlrOFvD02jf9KooIOaCKZOBbUo-bzCXCw5jiyn1kGkRPnE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full flex justify-between items-end">
+<div>
+<span class="text-tertiary font-headline font-bold text-xs tracking-widest uppercase mb-2 block">All-Terrain Luxury</span>
+<h3 class="text-5xl font-headline font-black tracking-tighter uppercase mb-4">SUV</h3>
+<div class="flex gap-4">
+<span class="bg-secondary-container px-4 py-1 rounded-full text-on-secondary-container text-xs font-bold uppercase tracking-widest">42 Mẫu xe</span>
+<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="bolt">bolt</span> Điện &amp; Hybrid</span>
+</div>
+</div>
+<button class="kinetic-gradient w-14 h-14 rounded-lg flex items-center justify-center text-on-primary-container shadow-2xl group-hover:translate-x-2 transition-transform">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Sedan Segment -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-lg bg-surface-container-low transition-colors duration-500 hover:bg-surface-container-high cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="sleek black executive sedan parked in a minimalist concrete architectural space with dramatic overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdxMogYf2WumdlkpuB1auxtkTD-SI2j-5SmKk62aN0xoHGkm2A8u1kcWVfs5c3kzzq4oc8wA50v5sGxnlZy1_7gmxViuCwbcX408q4E7mjUcoDaw8C6wrJYlf3yAyYN8xV5TqDpEPuyaepcfl2ok3ER242dqtkGLyv8ng5RnWn_qDtdW2WylxxzOa0SPUiWAev5bpVuy8WRT0V5oBT47nVdgWbbvbkdqBt5cpeMlpr8WTbThBTEoSv-WYEOPacsKjvoiZAnEO1YyJ-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-3xl font-headline font-black tracking-tighter uppercase mb-2">SEDAN</h3>
+<span class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">38 Mẫu xe có sẵn</span>
+</div>
+</div>
+<!-- Hatchback Segment -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-lg bg-surface-container-low transition-colors duration-500 hover:bg-surface-container-high cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="sporty blue hatchback parked on a modern city street at night with vibrant neon reflections on the polished car body" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdILGL2nXGW2-hDfnuVRf6cuToxrOJPF6La9wQp9UjbD57KrM4WODDi9pJgwW4OLNZTdd9BFjpomMnxWKbGo-u9V2d1E9Hxhsr-8aYNclg-S8qOXRhU2kr1SGqGQpvqLLyLdr-YyYGBNk6ZULe2o7InmZt1T6M0JYmeDTRsO5I3HYZNneN-F8pGARG7clpUq05VE3ErbCrR7pnDPQZ0ZSHd0hzM0oNEr2HsaArr-NjvEQX5Mq0kiG3LUI2UbOAYRAyFpgUhp8__gzX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-3xl font-headline font-black tracking-tighter uppercase mb-2">HATCHBACK</h3>
+<span class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">15 Mẫu xe có sẵn</span>
+</div>
+</div>
+<!-- MPV Segment -->
+<div class="md:col-span-6 md:row-span-1 group relative overflow-hidden rounded-lg bg-surface-container-low transition-colors duration-500 hover:bg-surface-container-high cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="modern luxury family MPV parked by a contemporary glass house at twilight with warm interior lights glowing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuzux3-Hdx4iEi_Yf8OlXi8ZHF5W5KB-oFI0FK5XqqmiYeindBsTL9LD8kttmptM2W9bHhpvpdjRJSjGB1Phm3IJ_oNrzeLt-7blidxA5wmChNWb-UyuB6eIgCb6pt1EOOqsEaP9AVk_X_5r4gZ08AFm1FEi1zT0gC_atBKBogP5yxFPC2-SULSq3_v0bqqEOfRx74tYnoIpFmwtdJO0gV9vdvnnhw-vbmEnf8RuEbzVYge7klTuxscqRDbWuq86N86CLY5LUls2bk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-4xl font-headline font-black tracking-tighter uppercase mb-2">MPV</h3>
+<div class="flex items-center gap-3">
+<span class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">12 Mẫu xe có sẵn</span>
+<span class="text-tertiary text-xs font-bold px-2 py-0.5 bg-tertiary-container/20 rounded">FAMILY CHOICE</span>
+</div>
+</div>
+</div>
+<!-- Pickup Segment -->
+<div class="md:col-span-6 md:row-span-1 group relative overflow-hidden rounded-lg bg-surface-container-low transition-colors duration-500 hover:bg-surface-container-high cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="heavy duty off-road pickup truck kicking up dust on a desert trail under a bright midday sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn4vAhD0frzGz5t8av5AxBaphpE_WEim9sWDEROYCiT22zeK_Y0pzm5FkQYsli-Xf-5MUODgy516HmMRrqSvbY-v2KbvxJ1I0lN7Qu_nMamEuv4clDdi0rtDAE2I8_jr_qjsnzccHFT3nclCI6h2xNYywLpdkwhSLML2yEhOKwTYMv30gROweTgQ50XFnPdjdmOHPrB3b0lc49ZUQg0ya_Z1oUXhLwOivUb7NkB1DxxUrDa1tTDt0W5GhkqDSMFxMuB2RKS2uP5rSI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-4xl font-headline font-black tracking-tighter uppercase mb-2">PICKUP</h3>
+<span class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">17 Mẫu xe có sẵn</span>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTAs -->
+<section class="mt-32 glass-panel p-12 rounded-lg border-l-4 border-primary">
+<div class="flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h2 class="text-4xl font-headline font-black tracking-tighter uppercase mb-4">Bạn chưa tìm thấy mẫu xe ưng ý?</h2>
+<p class="text-on-surface-variant leading-relaxed">Đăng ký nhận thông báo khi có các mẫu xe mới về showroom hoặc yêu cầu một dịch vụ tìm kiếm xe cá nhân hóa từ đội ngũ Concierge của chúng tôi.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<button class="kinetic-gradient px-8 py-4 rounded-lg font-headline font-bold uppercase tracking-widest text-sm shadow-xl hover:shadow-primary/20 transition-all active:scale-95">Liên hệ Tư vấn</button>
+<button class="bg-surface-container-highest px-8 py-4 rounded-lg font-headline font-bold uppercase tracking-widest text-sm text-on-surface border border-outline-variant/30 hover:bg-surface-bright transition-all active:scale-95">Xem Tất cả Xe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-[#434656]/20 py-12 px-8 w-full mt-20">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 w-full">
+<div>
+<span class="text-[#e5e2e1] font-bold text-2xl font-headline tracking-widest mb-4 block">KINETIC GALLERY</span>
+<p class="text-[#434656] font-['Manrope'] text-xs tracking-wider uppercase">© 2024 KINETIC GALLERY. PRECISION ENGINEERED.</p>
+</div>
+<div class="flex flex-wrap gap-8 justify-start md:justify-end">
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Inventory</a>
+<a class="font-['Manrope'] text-xs tracking-wider uppercase text-[#434656] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- Side Drawer (Logical Element for the shell) -->
+<aside class="fixed inset-y-0 left-0 z-[60] p-6 bg-[#131313] w-80 shadow-2xl shadow-black -translate-x-full lg:hidden">
+<div class="space-y-4">
+<h4 class="text-[#e5e2e1] font-bold font-headline uppercase tracking-widest text-sm mb-8">THE GALLERY</h4>
+<div class="flex flex-col space-y-2">
+<a class="flex items-center gap-4 p-4 bg-[#2962ff] text-white rounded-r-full font-['Space_Grotesk'] uppercase tracking-widest text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="directions_car">directions_car</span> Showroom
+                </a>
+<a class="flex items-center gap-4 p-4 text-[#e5e2e1] hover:bg-[#2a2a2a] hover:translate-x-2 transition-transform duration-200 font-['Space_Grotesk'] uppercase tracking-widest text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="speed">speed</span> Performance
+                </a>
+<a class="flex items-center gap-4 p-4 text-[#e5e2e1] hover:bg-[#2a2a2a] hover:translate-x-2 transition-transform duration-200 font-['Space_Grotesk'] uppercase tracking-widest text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span> Pre-Owned
+                </a>
+<a class="flex items-center gap-4 p-4 text-[#e5e2e1] hover:bg-[#2a2a2a] hover:translate-x-2 transition-transform duration-200 font-['Space_Grotesk'] uppercase tracking-widest text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span> Financing
+                </a>
+<a class="flex items-center gap-4 p-4 text-[#e5e2e1] hover:bg-[#2a2a2a] hover:translate-x-2 transition-transform duration-200 font-['Space_Grotesk'] uppercase tracking-widest text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span> Concierge
+                </a>
+</div>
+</div>
+</aside>
+</body></html>
