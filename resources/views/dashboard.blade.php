@@ -71,6 +71,12 @@
             <div class="bg-surface-container-high rounded-lg p-8">
                 <h2 class="text-xl font-headline font-bold text-on-background uppercase mb-6">Thao tác nhanh</h2>
                 <div class="flex flex-col gap-4">
+                    @if(Auth::user()->hasRole(['admin', 'manager']))
+                    <a href="{{ route('admin.index') }}" class="bg-gradient-to-r from-red-600 to-orange-500 text-white font-bold py-4 px-6 rounded-lg text-center text-xs tracking-widest uppercase hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-base">admin_panel_settings</span>
+                        TRANG QUẢN TRỊ
+                    </a>
+                    @endif
                     <a href="/" class="kinetic-gradient text-on-primary font-bold py-4 px-6 rounded-lg text-center text-xs tracking-widest uppercase hover:brightness-110 transition-all">TIẾP TỤC MUA XE</a>
                     <a href="/profile" class="bg-surface-container border border-outline-variant/20 text-on-surface font-bold py-4 px-6 rounded-lg text-center text-xs tracking-widest uppercase hover:bg-surface-container-highest transition-all">THÔNG TIN CÁ NHÂN</a>
                     <form method="POST" action="{{ route('logout') }}">
