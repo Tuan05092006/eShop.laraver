@@ -15,17 +15,28 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create([
-            'email' => 'admin@veloxauto.vn',
-            'password' => 'password123',
-            'role' => 'admin',
-        ]);
+        // Seed roles & permissions first
+        $this->call(RolesAndPermissionsSeeder::class);
 
-        User::create([
-            'email' => 'test@example.com',
-            'password' => 'password123',
-            'role' => 'user',
-        ]);
+        // Create admin user
+        $admin = User::firstOrCreate(
+            ['email' => 'admin@veloxauto.vn'],
+            [
+                'password' => 'password123',
+                'role' => 'admin',
+            ]
+        );
+        $admin->assignRole('admin');
+
+        // Create test user
+        $user = User::firstOrCreate(
+            ['email' => 'test@example.com'],
+            [
+                'password' => 'password123',
+                'role' => 'user',
+            ]
+        );
+        $user->assignRole('user');
 
         $this->call(ProductSeeder::class);
     }

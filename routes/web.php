@@ -37,7 +37,7 @@ require __DIR__.'/auth.php';
 // ── Admin Routes ─────────────────────────────────────────────
 use App\Http\Controllers\AdminController;
 
-Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+Route::middleware(['auth', 'role:admin|manager'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/',                              [AdminController::class, 'index'])->name('index');
     // Products
     Route::get('/products',                      [AdminController::class, 'products'])->name('products');

@@ -3,11 +3,26 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Product extends Model
+class Product extends Model implements HasMedia
 {
+    use InteractsWithMedia;
+
     protected $table = 'products';
     protected $fillable = ['category_id', 'type', 'name', 'description', 'model', 'year', 'price', 'image', 'is_featured', 'technical_specs'];
+
+    /**
+     * Register media collections for the product.
+     */
+    public function registerMediaCollections(): void
+    {
+        $this->addMediaCollection('images');
+
+        $this->addMediaCollection('thumbnail')
+            ->singleFile();
+    }
 
     protected $casts = [
         'technical_specs' => 'array',
